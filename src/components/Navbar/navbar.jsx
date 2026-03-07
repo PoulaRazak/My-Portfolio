@@ -1,13 +1,20 @@
 import Facebook from '../../assets/icons/facebook.svg?react';
 import Linkedin from '../../assets/icons/linkedin.svg?react';
-import Logo from '../../assets/images/logo.png';
-
-
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import { useEffect } from "react";
 
 function Navbar() {
 
+  const [darkMode, setDarkMode] = useState(false);
+  
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
   const [open, setOpen] = useState(false);
 
   return (
@@ -40,9 +47,9 @@ function Navbar() {
 
           {/* Logo (in text on mobile – its natural place on desktop) */}
           <div className="md:hidden absolute left-1/2 -translate-x-1/2 cursor-pointer">
-            <div className="border border-black rounded-full w-10 h-10 flex justify-center items-center">
+            <a href="/" className="border border-black rounded-full w-10 h-10 flex justify-center items-center">
               <h2 className="text-lg font-bold text-black font-serif cursor-pointer">PR</h2>
-            </div>
+            </a>
           </div>
 
           {/* ===== Desktop Navbar (as it is exactly) ===== */}
@@ -51,9 +58,9 @@ function Navbar() {
             <div className="flex flex-row gap-5 font-inter font-medium text-xs items-center">
 
               <div className="border-r-2 border-gray-300 pl-4 pr-4 ">
-                <div className="border border-black rounded-full w-10 h-10 flex justify-center items-center">
+                <a href="/" className="border border-black rounded-full w-10 h-10 flex justify-center items-center">
                   <h2 className=" text-lg font-bold text-black font-serif cursor-pointer">PR</h2>
-                </div>
+                </a>
               </div>
 
               <a href="#home" className="hover:text-black tracking-widest">HOME</a>
@@ -64,7 +71,17 @@ function Navbar() {
               <a href="#contact" className="hover:text-black tracking-widest">CONTACT</a>
             </div>
 
-            <div className="flex flex-row gap-2 border-l-2 border-gray-300 pl-4">
+            <div className="flex flex-row gap-2">
+              
+              <div onClick={() => setDarkMode(!darkMode)} className="m-auto">
+                {darkMode ? (
+                  <Icon icon="tdesign:mode-light" width="22" height="22" className="cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all duration-300"/>
+                ) : (
+                  <Icon icon="tdesign:mode-dark" width="22" height="22" className="cursor-pointer hover:text-blue-600 hover:scale-110 transition-all duration-300" />
+                )}
+              </div>
+              
+              <div className="flex flex-row gap-2  border-l-2 border-gray-300 pl-4">
               <a href="https://www.facebook.com/pepo.razak" target="_blank" className="hover:text-blue-600">
                 <Facebook />
               </a>
@@ -76,6 +93,7 @@ function Navbar() {
               <a href="https://www.linkedin.com/in/poula-razak-02a23b1b5" target="_blank" className="hover:text-blue-600">
                 <Linkedin />
               </a>
+              </div>
             </div>
           </div>
 
