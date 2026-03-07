@@ -3,7 +3,7 @@ import SwiperImage from "../../assets/images/swiper.png";
 import EcommerceImage from "../../assets/images/ecommerceimage.png"
 import FastBuyImage from "../../assets/images/fastbuy.png"
 import ClothingImage from "../../assets/images/clothing.png"
-import Video from "../../assets/videos/video.mp4";
+import Video from "../../assets/videos/video1.mp4";
 import Video2 from "../../assets/videos/project2v.mp4";
 import Pic3 from "../../assets/images/furniture.png";
 import { useState, useEffect, useRef } from "react";
