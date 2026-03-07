@@ -3,8 +3,6 @@ import SwiperImage from "../../assets/images/swiper.png";
 import EcommerceImage from "../../assets/images/ecommerceimage.png"
 import FastBuyImage from "../../assets/images/fastbuy.png"
 import ClothingImage from "../../assets/images/clothing.png"
-import Video from "../../assets/videos/video1.mp4";
-import Video2 from "../../assets/videos/project2v.mp4";
 import Pic3 from "../../assets/images/furniture.png";
 import { useState, useEffect, useRef } from "react";
 
@@ -318,7 +316,7 @@ const items = [
     id: 1,
     color: "#ff0088",
     label: "Filmak Movies Website",
-    video: Video,
+    video: "https://vimeo.com/1171235915?fl=ip&fe=ec",
     image: SwiperImage,
     url: "https://movies-react-website-lime.vercel.app/",
   },
@@ -326,7 +324,7 @@ const items = [
     id: 2,
     color: "#dd00ee",
     label: "Shopy Ecommerce Website",
-    video: Video2,
+    video: "https://vimeo.com/1171236469?fl=ip&fe=ec",
     image: EcommerceImage,
     url: "https://github.com/PoulaRazak/ecommerce-next.js-tailwind",
   },
