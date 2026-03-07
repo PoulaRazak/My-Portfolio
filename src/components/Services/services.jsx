@@ -41,8 +41,8 @@ function Services() {
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5 }}
       >
-        <p className="text-gray-400 font-serif">Check out all</p>
-        <h2 className="text-4xl font-bold text-[#6b6b6b]">MY SERVICES</h2>
+        <p className="font-serif" style={{ color: 'var(--text-subtle)' }}>Check out all</p>
+        <h2 className="text-4xl font-bold" style={{ color: 'var(--text-heading)' }}>MY SERVICES</h2>
       </motion.div>
 
       <motion.div
@@ -56,24 +56,26 @@ function Services() {
         <div className="flex flex-col md:flex-row gap-8 justify-between">
 
           <motion.div variants={item} className="flex flex-row gap-2 w-full md:w-1/2">
-            <div className="border border-gray-400 rounded-md w-16 h-16 flex items-center justify-center">
-              <Screen className="w-8 h-8 text-gray-600" />
+            <div className="rounded-md w-16 h-16 flex items-center justify-center flex-shrink-0"
+              style={{ border: '1px solid var(--border-medium)' }}>
+              <Screen className="w-8 h-8" style={{ color: 'var(--icon-color)' }} />
             </div>
             <div className="flex flex-col">
-              <h4 className="font-bold text-gray-600">WEB DEVELOPMENT</h4>
-              <p className="text-sm text-gray-400">
+              <h4 className="font-bold" style={{ color: 'var(--icon-color)' }}>WEB DEVELOPMENT</h4>
+              <p className="text-sm" style={{ color: 'var(--text-subtle)' }}>
                 Building responsive and interactive websites using modern web technologies.
               </p>
             </div>
           </motion.div>
 
           <motion.div variants={item} className="flex flex-row gap-2 w-full md:w-1/2">
-            <div className="border border-gray-400 rounded-md w-16 h-16 flex items-center justify-center">
-              <Developer className="w-8 h-8 text-gray-600" />
+            <div className="rounded-md w-16 h-16 flex items-center justify-center flex-shrink-0"
+              style={{ border: '1px solid var(--border-medium)' }}>
+              <Developer className="w-8 h-8" style={{ color: 'var(--icon-color)' }} />
             </div>
             <div className="flex flex-col">
-              <h4 className="font-bold text-gray-600">MOBILE APPLICATIONS</h4>
-              <p className="text-sm text-gray-400">
+              <h4 className="font-bold" style={{ color: 'var(--icon-color)' }}>MOBILE APPLICATIONS</h4>
+              <p className="text-sm" style={{ color: 'var(--text-subtle)' }}>
                 Creating modern and responsive mobile applications by using Flutter
               </p>
             </div>
@@ -85,59 +87,32 @@ function Services() {
         <div className="flex flex-col md:flex-row gap-8 justify-between">
 
           <motion.div variants={item} className="flex flex-row gap-2 w-full md:w-1/2">
-            <div className="border border-gray-400 rounded-md w-16 h-16 flex items-center justify-center">
-              <Desgin className="w-8 h-8 text-gray-600 m-1" />
+            <div className="rounded-md w-16 h-16 flex items-center justify-center flex-shrink-0"
+              style={{ border: '1px solid var(--border-medium)' }}>
+              <Desgin className="w-8 h-8 m-1" style={{ color: 'var(--icon-color)' }} />
             </div>
             <div className="flex flex-col">
-              <h4 className="font-bold text-gray-600">WEB DESIGN</h4>
-              <p className="text-sm text-gray-400">
+              <h4 className="font-bold" style={{ color: 'var(--icon-color)' }}>WEB DESIGN</h4>
+              <p className="text-sm" style={{ color: 'var(--text-subtle)' }}>
                 Useing modern design principles to create visually appealing and functional websites.
               </p>
             </div>
           </motion.div>
 
           <motion.div variants={item} className="flex flex-row gap-2 w-full md:w-1/2">
-            <div className="border border-gray-400 rounded-md w-16 h-16 flex items-center justify-center">
-              <Mobile className="w-8 h-8 text-gray-600" />
+            <div className="rounded-md w-16 h-16 flex items-center justify-center flex-shrink-0"
+              style={{ border: '1px solid var(--border-medium)' }}>
+              <Mobile className="w-8 h-8" style={{ color: 'var(--icon-color)' }} />
             </div>
             <div className="flex flex-col">
-              <h4 className="font-bold text-gray-600">MOBILE DESIGN</h4>
-              <p className="text-sm text-gray-400">
+              <h4 className="font-bold" style={{ color: 'var(--icon-color)' }}>MOBILE DESIGN</h4>
+              <p className="text-sm" style={{ color: 'var(--text-subtle)' }}>
                 Creating modern UI designs for mobile applications by Flutter widgets.
               </p>
             </div>
           </motion.div>
 
         </div>
-
-        {/* row 3 */}
-        {/* <div className="flex flex-col md:flex-row gap-8 justify-between">
-
-          <motion.div variants={item} className="flex flex-row gap-2 w-full md:w-1/2">
-            <div className="border border-gray-400 rounded-md w-16 h-16 flex items-center justify-center">
-              <Idea className="w-8 h-8 text-gray-600" />
-            </div>
-            <div className="flex flex-col">
-              <h4 className="font-bold text-gray-600">CREATIVE IDEAS</h4>
-              <p className="text-sm text-gray-400">
-                Suggesting innovative solutions to enhance user experience and engagement.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div variants={item} className="flex flex-row gap-2 w-full md:w-1/2">
-            <div className="border border-gray-400 rounded-md w-16 h-16 flex items-center justify-center">
-              <Desgin className="w-8 h-8 text-gray-600" />
-            </div>
-            <div className="flex flex-col">
-              <h4 className="font-bold text-gray-600">BRAND DESIGN</h4>
-              <p className="text-sm text-gray-400">
-                Creating unique brand identities that resonate with your audience and reflect your values.
-              </p>
-            </div>
-          </motion.div>
-
-        </div> */}
       </motion.div>
     </>
   )

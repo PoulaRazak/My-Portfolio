@@ -1,3 +1,68 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* ===== Light mode tokens ===== */
+:root {
+  --bg: #ffffff;
+  --bg-card: #f8fafc;
+  --text: #1a1a1a;
+  --text-muted: #6b7280;
+  /* gray-500 */
+  --text-subtle: #9ca3af;
+  /* gray-400 */
+  --text-heading: #6b6b6b;
+  --border: #e5e7eb;
+  /* gray-200 */
+  --border-medium: #d1d5db;
+  /* gray-300 */
+  --tag-bg: #d1d5db;
+  /* gray-300  – label badges */
+  --tag-text: #374151;
+  /* gray-700 */
+  --icon-color: #4b5563;
+  /* gray-600 */
+}
+
+/* ===== Dark mode tokens ===== */
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --bg-card: #1e293b;
+  --text: #f1f5f9;
+  --text-muted: #cbd5e1;
+  /* slate-300 */
+  --text-subtle: #94a3b8;
+  /* slate-400 */
+  --text-heading: #e2e8f0;
+  /* slate-200 */
+  --border: #334155;
+  /* slate-700 */
+  --border-medium: #475569;
+  /* slate-600 */
+  --tag-bg: #334155;
+  --tag-text: #e2e8f0;
+  --icon-color: #94a3b8;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* Profile photo: grayscale by default, colored on hover OR in dark mode */
+.profile-photo {
+  filter: grayscale(100%);
+  transition: filter 0.6s ease;
+  border-radius: 20px;
+}
+
+.profile-photo:hover,
+[data-theme="dark"] .profile-photo {
+  filter: grayscale(0%);
+}
+
+/* Projects heading color follows theme */
+[data-theme="dark"] .intro-section h2 {
+  color: var(--text-heading) !important;
+}

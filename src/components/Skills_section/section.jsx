@@ -8,31 +8,31 @@ import ITIImage from "../../assets/images/iti-logo.png"
 function SkillsSection() {
     return <>
         <div className='p-16 flex flex-col gap-3 text-center' id='skills'>
-            <p className="text-gray-400 font-serif">Here you can know my</p>
-            <h2 className='text-4xl font-bold text-[#6b6b6b]'>SKILLS AND EXPERIENCE</h2>
+            <p className="font-serif" style={{ color: 'var(--text-subtle)' }}>Here you can know my</p>
+            <h2 className='text-4xl font-bold' style={{ color: 'var(--text-heading)' }}>SKILLS AND EXPERIENCE</h2>
         </div>
         <div className="p-12 flex flex-col md:flex-row gap-12 justify-between">
             <div className="flex flex-col gap-4 w-full md:w-1/2">
                 <div className="flex flex-row gap-2 items-center">
-                    <AboutMeIcon className="w-4 h-4 text-gray-400" />
-                    <h3 className="font-bold text-gray-600">ABOUT ME</h3>
+                    <AboutMeIcon className="w-4 h-4" style={{ color: 'var(--text-subtle)' }} />
+                    <h3 className="font-bold" style={{ color: 'var(--icon-color)' }}>ABOUT ME</h3>
                 </div>
-                <p className="text-gray-500">
+                <p style={{ color: 'var(--text-muted)' }}>
                     Frontend Developer with a strong focus on building clean, responsive, and user-friendly web and mobile interfaces. Passionate about turning UI/UX designs into high-quality, scalable applications using modern frontend technologies.
                 </p>
-                <div className="mt-4 max-w-xl rounded-xl border border-gray-200 p-5 flex items-center gap-4">
+                <div className="mt-4 max-w-xl rounded-xl p-5 flex items-center gap-4"
+                    style={{ border: '1px solid var(--border)' }}>
                     <img
                         src={ITIImage}
                         alt="ITI Logo"
                         className="w-10 h-10 object-contain"
                     />
-
                     <div>
-                        <p className="font-semibold text-gray-900">
+                        <p className="font-semibold" style={{ color: 'var(--text)' }}>
                             ITI – Intensive Training Program (ITP)
                         </p>
-                        <p className="text-sm text-gray-600">
-                            Frontend & Cross-Platform Track
+                        <p className="text-sm" style={{ color: 'var(--icon-color)' }}>
+                            Frontend &amp; Cross-Platform Track
                         </p>
                     </div>
                 </div>
@@ -40,8 +40,8 @@ function SkillsSection() {
 
             <div className="flex flex-col gap-4 w-full md:w-1/2">
                 <div className="flex flex-row gap-2 items-center">
-                    <AboutMeIcon className="w-4 h-4 text-gray-400" />
-                    <h3 className="font-bold text-gray-600">DEVELOPMENT SKILLS</h3>
+                    <AboutMeIcon className="w-4 h-4" style={{ color: 'var(--text-subtle)' }} />
+                    <h3 className="font-bold" style={{ color: 'var(--icon-color)' }}>DEVELOPMENT SKILLS</h3>
                 </div>
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-col md:flex-row gap-4 items-center">
