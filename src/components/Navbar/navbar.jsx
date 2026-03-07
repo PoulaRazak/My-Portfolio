@@ -52,6 +52,14 @@ function Navbar() {
             </a>
           </div>
 
+           <div onClick={() => setDarkMode(!darkMode)}>
+                {darkMode ? (
+                  <Icon icon="tdesign:mode-light" width="22" height="22" className="cursor-pointer text-yellow-400 hover:scale-110 transition-all duration-300"/>
+                ) : (
+                  <Icon icon="tdesign:mode-dark" width="22" height="22" className="cursor-pointer text-black hover:scale-110 transition-all duration-300" />
+                )}
+              </div>
+
           {/* ===== Desktop Navbar (as it is exactly) ===== */}
           <div className="hidden md:flex flex-row flex-wrap justify-between items-center w-full">
 
