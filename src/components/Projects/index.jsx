@@ -31,10 +31,28 @@ export default function ScrollHorizontal() {
   }, []);
 
   const [leaving, setLeaving] = useState(false);
+
+  useEffect(() => {
+    // When the user comes back to this page from another site
+    const handlePageShow = (event) => {
+      if (event.persisted) {
+        // Reset leaving state so the original animation fades the projects back in
+        setLeaving(false);
+      }
+    };
+    window.addEventListener("pageshow", handlePageShow);
+    return () => window.removeEventListener("pageshow", handlePageShow);
+  }, []);
+
   const handleOpen = (url) => {
+    if (!url) return;
     setLeaving(true);
     setTimeout(() => {
       window.location.href = url;
+      // Fallback: reset the state shortly after navigation triggers
+      setTimeout(() => {
+        setLeaving(false);
+      }, 150);
     }, 600);
   };
 
