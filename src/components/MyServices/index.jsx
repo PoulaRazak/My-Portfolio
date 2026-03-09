@@ -84,8 +84,7 @@ function Services() {
         </div>
 
         {/* row 2 */}
-        <div className="flex flex-col md:flex-row gap-8 justify-between">
-
+        {/*<div className="flex flex-col md:flex-row gap-8 justify-between">
           <motion.div variants={item} className="flex flex-row gap-2 w-full md:w-1/2">
             <div className="rounded-md w-16 h-16 flex items-center justify-center flex-shrink-0"
               style={{ border: '1px solid var(--border-medium)' }}>
@@ -111,8 +110,7 @@ function Services() {
               </p>
             </div>
           </motion.div>
-
-        </div>
+        </div>*/}
       </motion.div>
     </>
   )
