@@ -84,33 +84,6 @@ function Services() {
         </div>
 
         {/* row 2 */}
-        {/*<div className="flex flex-col md:flex-row gap-8 justify-between">
-          <motion.div variants={item} className="flex flex-row gap-2 w-full md:w-1/2">
-            <div className="rounded-md w-16 h-16 flex items-center justify-center flex-shrink-0"
-              style={{ border: '1px solid var(--border-medium)' }}>
-              <Desgin className="w-8 h-8 m-1" style={{ color: 'var(--icon-color)' }} />
-            </div>
-            <div className="flex flex-col">
-              <h4 className="font-bold" style={{ color: 'var(--icon-color)' }}>WEB DESIGN</h4>
-              <p className="text-sm" style={{ color: 'var(--text-subtle)' }}>
-                Useing modern design principles to create visually appealing and functional websites.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div variants={item} className="flex flex-row gap-2 w-full md:w-1/2">
-            <div className="rounded-md w-16 h-16 flex items-center justify-center flex-shrink-0"
-              style={{ border: '1px solid var(--border-medium)' }}>
-              <Mobile className="w-8 h-8" style={{ color: 'var(--icon-color)' }} />
-            </div>
-            <div className="flex flex-col">
-              <h4 className="font-bold" style={{ color: 'var(--icon-color)' }}>MOBILE DESIGN</h4>
-              <p className="text-sm" style={{ color: 'var(--text-subtle)' }}>
-                Creating modern UI designs for mobile applications by Flutter widgets.
-              </p>
-            </div>
-          </motion.div>
-        </div>*/}
       </motion.div>
     </>
   )
