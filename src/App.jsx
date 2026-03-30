@@ -5,6 +5,7 @@ import SkillsSection from './components/MySkills/index.jsx'
 import Services from './components/MyServices/index.jsx'
 import Footer from './components/Footer/index.jsx'
 import Projects from './components/Projects/index.jsx'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Projects/>
       <Services/>
       <Footer/>
+      <Analytics />
     </>
   )
 }
