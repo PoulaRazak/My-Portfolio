@@ -4,6 +4,7 @@ import EcommerceImage from "../../assets/images/ecommerceimage.png"
 import FastBuyImage from "../../assets/images/fastbuy.png"
 import ClothingImage from "../../assets/images/clothing.png"
 import Pic3 from "../../assets/images/furniture.png";
+import Theatre from "../../assets/images/plays.png"
 import { useState, useEffect, useRef } from "react";
 
 
@@ -340,6 +341,14 @@ const items = [
   },
   {
     id: 2,
+    color: "#ffe600ff",
+    label: "Angel Theatre ",
+    video: "",
+    image: Theatre,
+    url: "https://angel-theatre.vercel.app/",
+  },
+  {
+    id: 3,
     color: "#dd00ee",
     label: "Shopy Ecommerce Website",
     video: "https://vimeo.com/1171236469?fl=ip&fe=ec",
@@ -347,7 +356,7 @@ const items = [
     url: "https://github.com/PoulaRazak/ecommerce-next.js-tailwind",
   },
   {
-    id: 3,
+    id: 4,
     color: "#9911ff",
     label: "Furniture Website",
     video: null,
@@ -355,7 +364,7 @@ const items = [
     url: "",
   },
   {
-    id: 4,
+    id: 5,
     color: "#0d63f8",
     label: "FastBuy Mobile App",
     video: null,
@@ -363,7 +372,7 @@ const items = [
     url: "https://github.com/PoulaRazak/fastbuy_flutter_firebase",
   },
   {
-    id: 5,
+    id: 6,
     color: "#0cdcf7",
     label: "Clothing Mobile App",
     video: null,
