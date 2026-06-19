@@ -4,7 +4,7 @@ function Home() {
     return <>
         <div className='flex md:flex-row flex-col'>
             <div className='flex-1 p-10'>
-                <img src={profileImage} alt="Profile Image" className="profile-photo" />
+                <img src="https://res.cloudinary.com/dfgx9qatt/image/upload/v1777561392/WhatsApp_Image_2025-12-15_at_12.04.57_serzow.jpg" alt="Profile Image" className="profile-photo" />
             </div>
             <div className='flex-1 p-10 flex flex-col gap-5' id='home'>
                 <div className='text-4xl font-bold mb-2' style={{ color: 'var(--text-heading)' }}>
