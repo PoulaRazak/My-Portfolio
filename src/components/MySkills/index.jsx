@@ -3,6 +3,8 @@ import ReactIcon from '../../assets/icons/react.svg?react';
 import { Icon } from "@iconify/react";
 import AnimatedCircle from '../Skillcircle';
 import ITIImage from "../../assets/images/iti-logo.png"
+import ShopifyIcon from '@iconify-react/logos/shopify';
+import WordpressIcon from '@iconify-react/bi/wordpress';
 
 
 function SkillsSection() {
@@ -44,7 +46,7 @@ function SkillsSection() {
                     <h3 className="font-bold" style={{ color: 'var(--icon-color)' }}>DEVELOPMENT SKILLS</h3>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <div className="flex flex-col md:flex-row gap-4 items-center">
+                    <div className="flex flex-col md:flex-row gap-4 items-center flex-wrap">
                         <div className='flex flex-row gap-4'>
                             <AnimatedCircle
                                 circleIcon={<ReactIcon className="h-9" />}
@@ -59,7 +61,26 @@ function SkillsSection() {
                             />
                         </div>
 
-                        <div className='flex flex-row gap-4'>
+                         <div className='flex flex-row gap-4'>
+                            <AnimatedCircle
+                                circleIcon={<ShopifyIcon height="2em" />}
+                                color='#95bf47'
+                                percentage={85}
+                            />
+
+                            <AnimatedCircle
+                                circleIcon={<WordpressIcon height="2em" color='#00749C' />}
+                                color='#00749C'
+                                percentage={70}
+                            />
+                        </div>
+
+                       
+                    </div>
+
+                    <div className="flex flex-col md:flex-row gap-4 items-center flex-wrap">
+
+                         <div className='flex flex-row gap-4'>
                             <AnimatedCircle
                                 circleIcon={<Icon icon="vscode-icons:file-type-light-js" width="32" height="32" />}
                                 color='#fbc02d'
@@ -72,9 +93,6 @@ function SkillsSection() {
                                 percentage={90}
                             />
                         </div>
-                    </div>
-
-                    <div className="flex flex-col md:flex-row gap-4 items-center">
 
                         <div className='flex flex-row gap-4'>
                             <AnimatedCircle

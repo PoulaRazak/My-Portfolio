@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify-react/bi": "^1.0.2",
+    "@iconify-react/logos": "^1.0.3",
     "@tailwindcss/vite": "^4.1.18",
     "@vercel/analytics": "^2.0.1",
     "motion": "^12.33.0",
